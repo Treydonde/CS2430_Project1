@@ -10,14 +10,9 @@ public class Main {
 		PermutationGenerator generator = new PermutationGenerator();
 
 		System.out.println("Base Array from n");
-		int[] n = generator.createBaseArray(4);
+		int[] n = generator.createBaseArray(6);
 		System.out.println(Arrays.toString(n));
 		System.out.println();
-
-//		System.out.println("Next permutation");
-//		PermutationGenerator.nextPermutation(n);
-//		System.out.println(Arrays.toString(n));
-//		System.out.println();
 
 		System.out.println("All permutations");
 		List<int[]> result = generator.findAllPermutations(n);
