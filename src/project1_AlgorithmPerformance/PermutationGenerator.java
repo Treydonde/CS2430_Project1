@@ -5,9 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * Team TBD
+ * GustavoC, BenS, PaulinaC, CamillaF
+ * CS 2430 section 002
+ * Programming Project 1 - Fall 2026
+ *
  * Creates a permutation generator
  * for provided small int create a base array of 0 - n-1
- *
  *
  * @author Gustavo C
  */
@@ -68,7 +72,7 @@ public class PermutationGenerator {
     }
 
     /**
-     * Quick reverse method for TODO finish method doc comment
+     * Quick reverse method for reversing suffixes
      * @param n
      * @param left
      * @param right
@@ -84,18 +88,10 @@ public class PermutationGenerator {
     }
 
     /**
-     * Helper method to swap two elements in an array
-     *
-     * @param nums the array containing elements to swap
-     * @param i first index
-     * @param j second index
+     * Finds all permutations by calling nextPermutation until false
+     * @param nArray array of all permutations for given n
+     * @return List of int arrays
      */
-    private void swap(int[] nums, int i, int j) {
-        int temp = nums[j];
-        nums[j] = nums[i];
-        nums[i] = temp;
-    }
-
     public List<int[]> findAllPermutations(int[] nArray) {
         Arrays.sort(nArray);
         List<int[]> result = new ArrayList<>();
@@ -107,9 +103,5 @@ public class PermutationGenerator {
         }
 
         return result;
-    }
-
-    static void main(String[] args) {
-
     }
 }
