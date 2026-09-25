@@ -11,7 +11,17 @@ package project1_AlgorithmPerformance;
  * Primary Author: Paulina Cruz
  */
 public class MergeSort {
-	
+
+	private int comparisons;
+
+	public int sort(int[] array) {
+		comparisons = 0;
+
+		mergeSort(array, 0, array.length - 1);
+
+		return comparisons;
+	}
+
 	private void mergeSort(int[] array, int left, int right) {
 		if (left < right) { // Base case: only continue if more than one element
 			int mid = left + (right - left) / 2;
@@ -19,7 +29,7 @@ public class MergeSort {
 			// Recursively sort the left and right halves
 			mergeSort(array, left, mid);
 			mergeSort(array, mid + 1, right);
-			
+
 			// Merge the sorted halves back together
 			merge(array, left, mid, right);
 		}
@@ -51,6 +61,8 @@ public class MergeSort {
 
 		// Compare elements and copy the smaller value into original array
 		while (i < leftSize && j < rightSize) {
+			comparisons++;
+
 			if (leftArray[i] <= rightArray[j]) {
 				array[k] = leftArray[i];
 				i++;
@@ -66,7 +78,7 @@ public class MergeSort {
 			i++;
 			k++;
 		}
-		
+
 		// Copy remaining elements from right temporary array
 		while (j < rightSize) {
 			array[k] = rightArray[j];
