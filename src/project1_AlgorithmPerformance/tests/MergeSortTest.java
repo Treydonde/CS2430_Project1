@@ -1,6 +1,7 @@
 package project1_AlgorithmPerformance.tests;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +9,7 @@ import project1_AlgorithmPerformance.MergeSort;
 
 /**
  * JUnit tests for the MergeSort implementation. 
- * Tests sorting correctness. 
+ * Tests sorting correctness and comparison counting. 
  * 
  * Team Name: Group 2
  * Team Members: Benjamin Shaw, Camilla Feitosa Nunes, Gustavo Cabral, Paulina Cruz
@@ -19,7 +20,7 @@ import project1_AlgorithmPerformance.MergeSort;
  */
 class MergeSortTest {
 
-	MergeSort mergeSort = new MergeSort();
+	private final MergeSort mergeSort = new MergeSort();
 	
 	// = = = = = Sorting Tests = = = = =
 	@Test
@@ -74,5 +75,44 @@ class MergeSortTest {
 	
 	// = = = = = Comparison Counting Tests = = = = =
 	
+	@Test
+	void comparisonCountTypicalUnsortedArray() {
+		int[] array = {5, 2, 8, 1, 3};
+		int expectedCount = 7;
+		
+		assertEquals(expectedCount, mergeSort.sort(array));
+	}
+	
+	@Test
+	void comparisonCountAlreadySortedArray() {
+		int[] array = {1, 2, 3, 4, 5};
+		int expectedCount = 7;
+		
+		assertEquals(expectedCount, mergeSort.sort(array));
+	}
+	
+	@Test
+	void comparisonCountReverseSortedArray() {
+		int[] array = {5, 4, 3, 2, 1};
+		int expectedCount = 5;
+		
+		assertEquals(expectedCount, mergeSort.sort(array));
+	}
+	
+	@Test
+	void comparisonCountSingleElementArray() {
+		int[] array = {5};
+		int expectedCount = 0;
+		
+		assertEquals(expectedCount, mergeSort.sort(array));
+	}
+	
+	@Test
+	void comparisonCountEmptyArray() {
+		int[] array = {};
+		int expectedCount = 0;
+		
+		assertEquals(expectedCount, mergeSort.sort(array));
+	}
 
 }
