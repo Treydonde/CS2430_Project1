@@ -111,8 +111,8 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 |---|---|---|---|
 | Create test plan | Ben | Not Started | - |
 | Test permutation generator | Ben / Team? | Not Started | - |
-| Test Merge Sort | Ben / Team? | Not Started | - |
-| Test Quick Sort | Ben / Team? | Not Started | - |
+| Test Merge Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
+| Test Quick Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
 | Test Shaker Sort | Ben / Team? | Not Started | - |
 | Test Heap Sort | Ben / Team? | Not Started | - |
 | TBD | TBD | Not Started | - |
