@@ -86,7 +86,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Implement `PermutationGenerator.java` | Gustavo | Done | `src/project1_AlgorithmPerformance/PermutationGenerator.java` |
+| Implement `PermutationGenerator.java` | Gustavo | Done | [Commit 7af7d97](https://github.com/Treydonde/CS2430_Project1/commit/7af7d97ba53b429345baa05449c902fff64eebef) |
 | Implement `ExperimentDriver.java` | TBD | Not Started | - |
 | Integrate permutation generator with sorting algorithms | TBD | Not Started | - |
 | Record algorithm name, input array, and comparison count | TBD | Not Started | - |
@@ -100,8 +100,8 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 |---|---|---|---|
 | Implement `MergeSort.java` | Paulina | Done | [Commit e8c6694](https://github.com/Treydonde/CS2430_Project1/commit/e8c669461130dad2c5918c2a55ea8312b8152a5b) |
 | Implement `QuickSort.java` | Paulina | Done | [Commit 6400ffa](https://github.com/Treydonde/CS2430_Project1/commit/6400ffa13d7ce08d1b1c17de855959ba5931bc49) |
-| Implement `ShakerSort.java` | Ben | In Progress | - |
-| Implement `HeapSort.java` | Ben | In Progress | - |
+| Implement `ShakerSort.java` | Ben | Done | [Commit b5cbab1](https://github.com/Treydonde/CS2430_Project1/commit/b5cbab1a4b7eaa470bf5a8d9e0df858442091a4f) |
+| Implement `HeapSort.java` | Ben | Done | [Commit b5cbab1](https://github.com/Treydonde/CS2430_Project1/commit/b5cbab1a4b7eaa470bf5a8d9e0df858442091a4f) |
 
 ---
 
