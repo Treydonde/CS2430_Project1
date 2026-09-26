@@ -1,5 +1,16 @@
 # Programming Project 1 - Project Plan
 
+## Project Information
+
+- **Course:** CS 2430, Section 002 - Fall 2026
+- **Project:** Programming Project 1 - Sorting Algorithms, Efficiency, and Performance
+- **Team:** Group 2
+- **Start Date:** 2026-09-14
+- **Due Date:** 2026-10-02
+- **Checkpoint Date:** 2026-09-25
+
+---
+
 ## Team Members and Roles
 
 | Team Member | Role | Main Responsibilities |
@@ -33,7 +44,9 @@ The collected data will be used to determine:
 - Big-Omega estimates
 - Big-Theta estimates
 
-Add Comparison Counting Rules here? //TODO
+### Comparison Counting Rules
+
+Only element-to-element comparisons that determine ordering will be counted. Loop conditions, index comparisons, assignments, and swaps will not be included in the comparison count. 
 
 ---
 
@@ -41,11 +54,12 @@ Add Comparison Counting Rules here? //TODO
 
 | Class | Purpose |
 |---|---|
-| `PermutationGenerator.java` | Generates all permutations of 0 through n - 1 |
-| `MergeSort.java` | Implements Merge Sort and counts comparisons |
-| `QuickSort.java` | Implements Quick Sort and counts comparisons |
-| `ShakerSort.java` | Implements Shaker Sort and counts comparisons |
-| `HeapSort.java` | Implements Heap Sort and counts comparisons |
+| `PermutationGenerator.java` | Generates all permutations of the integers from 0 through n - 1 |
+| `MergeSort.java` | Implements Merge Sort and counts element-to-element comparisons |
+| `QuickSort.java` | Implements Quick Sort and counts element-to-element comparisons |
+| `ShakerSort.java` | Implements Shaker Sort and counts element-to-element comparisons |
+| `HeapSort.java` | Implements Heap Sort and counts element-to-element comparisons |
+| `ExperimentDriver.java` | Runs each sorting algorithm on the generated permutations and records the comparison results |
 | `TBD` | TBD |
 
 ---
@@ -56,22 +70,26 @@ Add Comparison Counting Rules here? //TODO
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Create GitHub repository | Ben | Done | Repository |
+| Create GitHub repository | Gustavo | Done | Repository |
 | Add all team members to repository | Team | Done | Repository |
-| Assign team roles | Team | Done | Project Plan |
-| Create `/docs` folder | Gustavo | Done | Commit |
-| Create Project Plan | Paulina | In Progress | - |
-| Create design artifacts | Gustavo/Paulina | In Progress | - |
-| Create `README.md` | Paulina | Not Started | - |
-| Create `CONTRIBUTIONS.md` | Team | In Progress | - |
+| Confirm instructor repository access | Gustavo | Done | Invite confirmed |
+| Assign team roles | Team | In Progress | `docs/ProjectPlan.md` |
+| Create `/docs` folder | Gustavo | Done | `docs/` |
+| Create Project Plan | Paulina | In Progress | `docs/ProjectPlan.md` |
+| Create design artifacts | Gustavo / Paulina | In Progress | `docs/Sequence_PseudoCode.md`, `docs/UML.md` |
+| Create `README.md` | Gustavo | Done | `README.md` |
+| Create `CONTRIBUTIONS.md` | Team | In Progress | `docs/CONTRIBUTIONS.md` |
 
 ---
 
-## Permutation Generator 
+## Data Generation and Experiment Driver
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Create `PermutationGenerator.java` | Gustavo | Not Started | - |
+| Implement `PermutationGenerator.java` | Gustavo | Done | `src/project1_AlgorithmPerformance/PermutationGenerator.java` |
+| Implement `ExperimentDriver.java` | TBD | Not Started | - |
+| Integrate permutation generator with sorting algorithms | TBD | Not Started | - |
+| Record algorithm name, input array, and comparison count | TBD | Not Started | - |
 | TBD | TBD | Not Started | - |
 
 ---
@@ -80,10 +98,10 @@ Add Comparison Counting Rules here? //TODO
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Implement `MergeSort.java` | Paulina | Not Started | - |
-| Implement `QuickSort.java` | Paulina | Not Started | - |
-| Implement `ShakerSort.java` | Ben | Not Started | - |
-| Implement `HeapSort.java` | Ben | Not Started | - |
+| Implement `MergeSort.java` | Paulina | Done | [Commit e8c6694](https://github.com/Treydonde/CS2430_Project1/commit/e8c669461130dad2c5918c2a55ea8312b8152a5b) |
+| Implement `QuickSort.java` | Paulina | Done | [Commit 6400ffa](https://github.com/Treydonde/CS2430_Project1/commit/6400ffa13d7ce08d1b1c17de855959ba5931bc49) |
+| Implement `ShakerSort.java` | Ben | In Progress | - |
+| Implement `HeapSort.java` | Ben | In Progress | - |
 
 ---
 
@@ -121,25 +139,44 @@ Add Comparison Counting Rules here? //TODO
 
 # Milestones
 
-## Milestone 1 - Project Setup - Done by: 09-18-2026
+## Milestone 1 - Project Setup and Checkpoint - Target: 09-25-2026
 
 - Repository created
-- Professor can view repository
+- Team members added
+- Instructor access confirmed
 - Team roles assigned
-- Project Plan created
-- 2 Design artifacts created
+- Project Plan updated
+- 2 Design artifacts included in `/docs`
 
-## Milestone 2 - Implementation - Done by: 09-21-2026
+**Status:** In Progress
+
+## Milestone 2 - Core Implementation - Target: TBD
 
 - PermutationGenerator completed
 - Merge Sort completed
 - Quick Sort completed
 - Shaker Sort completed
 - Heap Sort completed
+- ExperimentDriver completed
 
-## Milestone 3 - TBD - Done by: TBD
+**Status:** In Progress
 
-- TBD
-- 
+## Milestone 3 - Testing and Data Collection - Target: TBD
 
+- Test plan completed
+- Sorting algorithms verified
+- Permutation generator verified
+- Runs completed for n = 4, 6, and 8
+- Best 10, worst 10, and average comparison results collected
 
+**Status:** Not Started
+
+## Milestone 4 - Final Report and Submission - Target: 10-02-2026
+
+- Report completed
+- README completed
+- CONTRIBUTIONS.md completed
+- Screencast recorded
+- Final submission package reviewed
+
+**Status:** Not Started
