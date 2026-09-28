@@ -128,11 +128,13 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Write methods section | Team | Not Started | - |
 | Create results tables | Team | Not Started | - |
 | Complete Big-O / Big-Omega / Big-Theta analysis | Team | Not Started | - |
+//TODO add each question in section 8 as it's own line item for distribution
 | Write conclusion | Team | Not Started | - |
 | Assemble final report | Paulina | Not Started | - |
 | Complete `README.md` | Paulina | Not Started | - |
 | Complete `CONTRIBUTIONS.md` | Team | Not Started | - |
 | Record team screencast | Team | Not Started | - |
+//TODO add line item for editing video together
 | Review final submission package | Team | Not Started | - |
 
 ---
