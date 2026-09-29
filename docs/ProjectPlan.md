@@ -87,10 +87,9 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Implement `PermutationGenerator.java` | Gustavo | Done | [Commit 7af7d97](https://github.com/Treydonde/CS2430_Project1/commit/7af7d97ba53b429345baa05449c902fff64eebef) |
-| Implement `ExperimentDriver.java` | TBD | Not Started | - |
-| Integrate permutation generator with sorting algorithms | TBD | Not Started | - |
-| Record algorithm name, input array, and comparison count | TBD | Not Started | - |
-| TBD | TBD | Not Started | - |
+| Implement `ExperimentDriver.java` | Gustavo | Not Started | - |
+| Integrate permutation generator with sorting algorithms | Gustavo | Not Started | - |
+| Record algorithm name, input array, and comparison count | Paulina | Not Started | - |
 
 ---
 
@@ -113,8 +112,8 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Test permutation generator | Gustavo | Not Started | - |
 | Test Merge Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
 | Test Quick Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
-| Test Shaker Sort | Ben / Team? | Not Started | - |
-| Test Heap Sort | Ben / Team? | Not Started | - |
+| Test Shaker Sort | Camilla | Not Started |  |
+| Test Heap Sort | Ben  | Not Started | - |
 | TBD | TBD | Not Started | - |
 
 ---
@@ -123,28 +122,27 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Write introduction | Team | Not Started | - |
-| Write algorithm summaries | Team | Not Started | - |
-| Write methods section | Team | Not Started | - |
-| Create results tables | Team | Not Started | - |
-| Complete Big-O / Big-Omega / Big-Theta analysis | Team | Not Started | - |
-//TODO add each question in section 8 as it's own line item for distribution
-| Write conclusion | Team | Not Started | - |
+| Write introduction | Paulina | Not Started | - |
+| Write algorithm summaries | Paulina/Camilla | Not Started | - |
+| Write methods section | Gustavo | Not Started | - |
+| Create results tables | Paulina | Not Started | - |
+| Write conclusion | Paulina | Not Started | - |
 | Assemble final report | Paulina | Not Started | - |
 | Complete `README.md` | Paulina | Not Started | - |
 | Complete `CONTRIBUTIONS.md` | Team | Not Started | - |
 | Record team screencast | Team | Not Started | - |
-| Estimate Big-O, Big-Ω, and Big-Θ for each algorithm using your data (show reasoning, not just lookup). | TBD | - |
-| Discuss sensitivity of best/worst cases — is performance stable or highly variable? Use your best/worst spread to justify. | TBD | - |
-| Project number of comparisons for n = 12 using logical extrapolation from your measured values. | TBD | - |
-| Identify which algorithm performed best in best, average, and worst cases for n = 4, 6, 8, and discuss your predictions for larger n. | TBD | - |
-| Briefly discuss why your measured results may differ from “published” complexity discussions (constants, implementation choices, pivots, data structures, etc.). | TBD | - |
-| Your project structure (including /docs, README, and key source files). | TBD | - |
-| Your permutation generator and where it is used in the driver. | TBD | - |
-| Where and how comparisons are counted in at least one algorithm (explain the counting definition). | TBD | - |
-| A live run for one n value and where the program outputs/stores the results used in the report. | TBD | - |
-| A brief summary of the report’s conclusions. | TBD | - |
-| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | TBD | - |
+| Edit team screencast | Gustavo | Not Started | - |
+| Estimate Big-O, Big-Ω, and Big-Θ for each algorithm using your data (show reasoning, not just lookup). | Ben | - |
+| Discuss sensitivity of best/worst cases — is performance stable or highly variable? Use your best/worst spread to justify. | Camilla | - |
+| Project number of comparisons for n = 12 using logical extrapolation from your measured values. | Ben | - |
+| Identify which algorithm performed best in best, average, and worst cases for n = 4, 6, 8, and discuss your predictions for larger n. | Gustavo | - |
+| Briefly discuss why your measured results may differ from “published” complexity discussions (constants, implementation choices, pivots, data structures, etc.). | Camilla | - |
+| Your project structure (including /docs, README, and key source files). | Paulina | - |
+| Your permutation generator and where it is used in the driver. | Gustavp | - |
+| Where and how comparisons are counted in at least one algorithm (explain the counting definition). | Camilla | - |
+| A live run for one n value and where the program outputs/stores the results used in the report. | Ben | - |
+| A brief summary of the report’s conclusions. | Ben | - |
+| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | - |
 | Review final submission package | Team | Not Started | - |
 
 ---
