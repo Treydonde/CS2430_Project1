@@ -110,7 +110,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Create test plan | Ben | Not Started | - |
-| Test permutation generator | Ben / Team? | Not Started | - |
+| Test permutation generator | Gustavo | Not Started | - |
 | Test Merge Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
 | Test Quick Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
 | Test Shaker Sort | Ben / Team? | Not Started | - |
@@ -134,7 +134,17 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Complete `README.md` | Paulina | Not Started | - |
 | Complete `CONTRIBUTIONS.md` | Team | Not Started | - |
 | Record team screencast | Team | Not Started | - |
-//TODO add line item for editing video together
+| Estimate Big-O, Big-Ω, and Big-Θ for each algorithm using your data (show reasoning, not just lookup). | TBD | - |
+| Discuss sensitivity of best/worst cases — is performance stable or highly variable? Use your best/worst spread to justify. | TBD | - |
+| Project number of comparisons for n = 12 using logical extrapolation from your measured values. | TBD | - |
+| Identify which algorithm performed best in best, average, and worst cases for n = 4, 6, 8, and discuss your predictions for larger n. | TBD | - |
+| Briefly discuss why your measured results may differ from “published” complexity discussions (constants, implementation choices, pivots, data structures, etc.). | TBD | - |
+| Your project structure (including /docs, README, and key source files). | TBD | - |
+| Your permutation generator and where it is used in the driver. | TBD | - |
+| Where and how comparisons are counted in at least one algorithm (explain the counting definition). | TBD | - |
+| A live run for one n value and where the program outputs/stores the results used in the report. | TBD | - |
+| A brief summary of the report’s conclusions. | TBD | - |
+| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | TBD | - |
 | Review final submission package | Team | Not Started | - |
 
 ---
@@ -152,7 +162,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 **Status:** In Progress
 
-## Milestone 2 - Core Implementation - Target: TBD
+## Milestone 2 - Core Implementation - Target: 09-29-2026
 
 - PermutationGenerator completed
 - Merge Sort completed
@@ -163,7 +173,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 **Status:** In Progress
 
-## Milestone 3 - Testing and Data Collection - Target: TBD
+## Milestone 3 - Testing and Data Collection - Target: 09-30-2026
 
 - Test plan completed
 - Sorting algorithms verified
