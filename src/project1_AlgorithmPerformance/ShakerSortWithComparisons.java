@@ -69,7 +69,7 @@ public class ShakerSortWithComparisons {
 				}
 			}
 
-			// The first element is now in the correct position
+			// The first element is now in the correct position.
 			start++;
 		}
 

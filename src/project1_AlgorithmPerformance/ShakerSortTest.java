@@ -1,37 +1,48 @@
 package project1_AlgorithmPerformance;
 
-import java.util.Arrays;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ShakerSortTest {
+import org.junit.jupiter.api.Test;
 
-	public static void main(String[] args) {
+class ShakerSortTest {
 
+	@Test
+	void testMixedArray() {
 		ShakerSortWithComparisons shaker = new ShakerSortWithComparisons();
 
-		// Test a mixed array
-		int[] mixedArray = {5, 3, 4, 1, 2};
-		int mixedComparisons = shaker.sort(mixedArray);
+		int[] array = {5, 3, 4, 1, 2};
+		int comparisons = shaker.sort(array);
 
-		System.out.println("Mixed array test");
-		System.out.println("Sorted array: " + Arrays.toString(mixedArray));
-		System.out.println("Comparisons: " + mixedComparisons);
-		System.out.println();
+		int[] expected = {1, 2, 3, 4, 5};
 
-		// Test an already sorted array
-		int[] sortedArray = {1, 2, 3, 4, 5};
-		int sortedComparisons = shaker.sort(sortedArray);
+		assertArrayEquals(expected, array);
+		assertEquals(12, comparisons);
+	}
 
-		System.out.println("Sorted array test");
-		System.out.println("Sorted array: " + Arrays.toString(sortedArray));
-		System.out.println("Comparisons: " + sortedComparisons);
-		System.out.println();
+	@Test
+	void testSortedArray() {
+		ShakerSortWithComparisons shaker = new ShakerSortWithComparisons();
 
-		// Test a reverse order array
-		int[] reverseArray = {5, 4, 3, 2, 1};
-		int reverseComparisons = shaker.sort(reverseArray);
+		int[] array = {1, 2, 3, 4, 5};
+		int comparisons = shaker.sort(array);
 
-		System.out.println("Reverse array test");
-		System.out.println("Sorted array: " + Arrays.toString(reverseArray));
-		System.out.println("Comparisons: " + reverseComparisons);
+		int[] expected = {1, 2, 3, 4, 5};
+
+		assertArrayEquals(expected, array);
+		assertEquals(4, comparisons);
+	}
+
+	@Test
+	void testReverseArray() {
+		ShakerSortWithComparisons shaker = new ShakerSortWithComparisons();
+
+		int[] array = {5, 4, 3, 2, 1};
+		int comparisons = shaker.sort(array);
+
+		int[] expected = {1, 2, 3, 4, 5};
+
+		assertArrayEquals(expected, array);
+		assertEquals(12, comparisons);
 	}
 }
