@@ -18,7 +18,7 @@
 | Gustavo Cabral | Implementation Lead | Core implementation, integration, and main branch health |
 | Benjamin Shaw | Verification Lead | Test plan, edge cases, testing, and verification evidence |
 | Paulina Cruz | Communications Lead | Report assembly, run instructions, documentation, and deliverable packaging |
-| Camilla Feitosa Nunes | TBD | TBD |
+| Camilla Feitosa Nunes | Project Support | Provide support across implementation, testing, and documentation as needed. |
 
 ---
 
