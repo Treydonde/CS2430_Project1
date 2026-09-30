@@ -73,7 +73,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Create GitHub repository | Gustavo | Done | Repository |
 | Add all team members to repository | Team | Done | Repository |
 | Confirm instructor repository access | Gustavo | Done | Invite confirmed |
-| Assign team roles | Team | In Progress | `docs/ProjectPlan.md` |
+| Assign team roles | Team | Done | `docs/ProjectPlan.md` |
 | Create `/docs` folder | Gustavo | Done | `docs/` |
 | Create Project Plan | Paulina | In Progress | `docs/ProjectPlan.md` |
 | Create design artifacts | Gustavo / Paulina | In Progress | `docs/Sequence_PseudoCode.md`, `docs/UML.md` |
@@ -112,7 +112,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Test permutation generator | Gustavo | Not Started | - |
 | Test Merge Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
 | Test Quick Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
-| Test Shaker Sort | Camilla | Not Started |  |
+| Test Shaker Sort | Camilla | In Progress |Tests written and passing; awaiting verification review|
 | Test Heap Sort | Ben  | Not Started | - |
 | TBD | TBD | Not Started | - |
 
