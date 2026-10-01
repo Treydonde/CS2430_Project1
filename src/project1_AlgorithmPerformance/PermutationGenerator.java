@@ -24,7 +24,7 @@ public class PermutationGenerator {
      * @param n integer
      * @return array of integers 0 through n − 1
      */
-    public int[] createBaseArray(int n) {
+    public static int[] createBaseArray(int n) {
         int[] array = new int[n];
 
         for (int i = 0; i < n; i++) {
@@ -92,7 +92,7 @@ public class PermutationGenerator {
      * @param nArray array of all permutations for given n
      * @return List of int arrays
      */
-    public List<int[]> findAllPermutations(int[] nArray) {
+    public static List<int[]> findAllPermutations(int[] nArray) {
         Arrays.sort(nArray);
         List<int[]> result = new ArrayList<>();
 

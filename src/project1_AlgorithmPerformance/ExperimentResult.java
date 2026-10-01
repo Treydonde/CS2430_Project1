@@ -1,5 +1,7 @@
 package project1_AlgorithmPerformance;
 
+import java.util.Arrays;
+
 /**
  * TODO
  * 
@@ -10,7 +12,7 @@ package project1_AlgorithmPerformance;
  *
  * Primary Author: Paulina Cruz
  */
-public class ExperimentResult {
+public class ExperimentResult implements Comparable<ExperimentResult> {
 
 	private final String algorithm;
 	private final int[] inputArray;
@@ -28,7 +30,7 @@ public class ExperimentResult {
 		this.inputArray = inputArray;
 		this.comparisons = comparisons;
 	}
-	
+
 	public String getAlgorithm() {
 		return algorithm;
 	}
@@ -40,5 +42,14 @@ public class ExperimentResult {
 	public int getComparisons() {
 		return comparisons;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "{" + algorithm + " " + Arrays.toString(inputArray) + " comp: " + comparisons + '}';
+	}
+
+	@Override
+	public int compareTo(ExperimentResult o) {
+		return Integer.compare(this.comparisons, o.comparisons);
+	}
 }
