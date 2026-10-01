@@ -84,7 +84,7 @@ public class HeapSort {
 	 * 
 	 * @param arr the array
 	 * @param n   array length
-	 * @param i   what part of the array we are in
+	 * @param index   what part of the array we are in
 	 */
 	private void heapify(int[] arr, int n, int index) {
 		// The largest is the current index.
