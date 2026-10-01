@@ -8,7 +8,13 @@ package project1_AlgorithmPerformance;
  * is to get the sorted array. The private methods are sort and heapify. The
  * sort method sorts the array given and it does that by the help of the heapify
  * method that it calls a few times to help sort.
- * 
+ *
+ * Team Name: Group 2
+ * Team Members: Benjamin Shaw, Camilla Feitosa Nunes, Gustavo Cabral, Paulina Cruz
+ * Course: CS 2430, Section 002
+ * Project: Programming Project 1 - Fall 2026
+ *
+ *
  * @author Benjamin Shaw
  */
 public class HeapSort {
