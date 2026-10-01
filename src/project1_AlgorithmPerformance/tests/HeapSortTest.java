@@ -10,9 +10,6 @@ import project1_AlgorithmPerformance.HeapSort;
 /**
  * HeapSortTest tests the HeapSort class to see if it passes the select tests.
  *
- * JUnit tests for the MergeSort implementation.
- * Tests sorting correctness and comparison counting.
- *
  * Team Name: Group 2
  * Team Members: Benjamin Shaw, Camilla Feitosa Nunes, Gustavo Cabral, Paulina Cruz
  * Course: CS 2430, Section 002

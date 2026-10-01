@@ -2,6 +2,11 @@ package project1_AlgorithmPerformance;
 
 /**
  * ShakerSort implements the shaker sort algorithm
+ *
+ * Team Name: Group 2
+ * Team Members: Benjamin Shaw, Camilla Feitosa Nunes, Gustavo Cabral, Paulina Cruz
+ * Course: CS 2430, Section 002
+ * Project: Programming Project 1 - Fall 2026
  * 
  * @author Benjamin Shaw
  */
