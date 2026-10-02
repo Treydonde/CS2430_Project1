@@ -23,10 +23,10 @@ import java.util.List;
 public class ExperimentDriver {
 
 	// Store the results from every sorting algorithm run
-	static List<ExperimentResult> mergeResults = new ArrayList<>();
-	static List<ExperimentResult> quickResults = new ArrayList<>();
-	static List<ExperimentResult> shakerResults = new ArrayList<>();
-	static List<ExperimentResult> heapResults = new ArrayList<>();
+	private static final List<ExperimentResult> mergeResults = new ArrayList<>();
+	private static final List<ExperimentResult> quickResults = new ArrayList<>();
+	private static final List<ExperimentResult> shakerResults = new ArrayList<>();
+	private static final List<ExperimentResult> heapResults = new ArrayList<>();
 
 	/**
 	 * Generates all permutations for the given input size and runs each sorting
@@ -36,8 +36,15 @@ public class ExperimentDriver {
 	 * @param n	the number of elements in each generated permutation 
 	 */
 	public static void runExperiment(int n) {
-		// ==================== Permutation Generation ====================
 		
+		// Clear results from the previous input size
+		mergeResults.clear();
+		quickResults.clear();
+		shakerResults.clear();
+		heapResults.clear();
+		
+		
+		// ==================== Permutation Generation ====================
 		// Create the starting array containing values from 0 through n - 1
 		int[] baseArray = PermutationGenerator.createBaseArray(n);
 		
@@ -60,10 +67,6 @@ public class ExperimentDriver {
 
 			mergeResults.add(mergeResult);
 			
-			// Temporary print for testing
-			System.out.println(mergeResult.getAlgorithm() + " | Input: " + Arrays.toString(mergeResult.getInputArray())
-					+ " | Comparisons: " + mergeResult.getComparisons());
-			
 			// ==================== QuickSort ====================
 			int[] quickArray = Arrays.copyOf(permutation, permutation.length);
 			
@@ -74,10 +77,6 @@ public class ExperimentDriver {
 			ExperimentResult quickResult = new ExperimentResult("QuickSort", permutation, quickComparisons);
 
 			quickResults.add(quickResult);
-
-			// Temporary print for testing
-			System.out.println(quickResult.getAlgorithm() + " | Input: " + Arrays.toString(quickResult.getInputArray())
-					+ " | Comparisons: " + quickResult.getComparisons());
 			
 			// ==================== ShakerSort ====================
 			int[] shakerArray = Arrays.copyOf(permutation, permutation.length);
@@ -95,10 +94,6 @@ public class ExperimentDriver {
 			ExperimentResult heapResult = new ExperimentResult("HeapSort", permutation, heapComparisons);
 
 			heapResults.add(heapResult);
-
-			// Temporary print for testing
-			System.out.println(heapResult.getAlgorithm() + " | Input: " + Arrays.toString(heapResult.getInputArray())
-					+ " | Comparisons: " + heapResult.getComparisons());
 		}
 	}
 
@@ -165,31 +160,57 @@ public class ExperimentDriver {
 	 * all permutations for each algorithm
 	 */
 	public static void returnAverage() {
-		int mergeAvg = 0;
+		double mergeAvg = 0.0;
 		for (ExperimentResult r : mergeResults) {
 			mergeAvg += r.getComparisons();
 		}
 		mergeAvg /= mergeResults.size();
 
-		int quickAvg = 0;
+		double quickAvg = 0.0;
 		for (ExperimentResult r : quickResults) {
 			quickAvg += r.getComparisons();
 		}
 		quickAvg /= quickResults.size();
 
-//		int shakerAvg = 0;
-//		for (ExperimentResult r : shakerResults) {}
+//		double shakerAvg = 0.0;
+//		for (ExperimentResult r : shakerResults) {
+//			shakerAvg += r.getComparisons();
+//		}
+//		shakerAvg /= shakerResults.size();
 
-		int heapAvg = 0;
+		double heapAvg = 0.0;
 		for (ExperimentResult r : heapResults) {
 			heapAvg += r.getComparisons();
 		}
 		heapAvg /= heapResults.size();
 
-		System.out.println("Merge Avg: " + mergeAvg);
-		System.out.println("Quick Avg: " + quickAvg);
-		//System.out.println("Shaker Avg: " + shakerAvg);
-		System.out.println("Heap Avg: " + heapAvg);
+		System.out.printf("Merge Avg: %.2f%n", mergeAvg);
+		System.out.printf("Quick Avg: %.2f%n", quickAvg);
+		//System.out.printf("Shaker Avg: %.2f%n", shakerAvg);
+		System.out.printf("Heap Avg: %.2f%n", heapAvg);
+	}
+	
+	/**
+	 * Runs the experiment for the specified input size and prints the 
+	 * best ten cases, worst ten cases, and average comparison counts
+	 * for each algorithm.
+	 * 
+	 * @param n	the number of elements in each generated permutation
+	 */
+	private static void runAndPrintExperiment(int n) {
+		runExperiment(n);
+		
+		System.out.println();
+		System.out.println("========== Results for n = " + n + " ===========");
+		
+		System.out.println("\n~~~~ Best Ten ~~~~");
+		returnBestTen();
+		
+		System.out.println("\n~~~~ Worst Ten ~~~~");
+		returnWorstTen();
+		
+		System.out.println("\n~~~~ Average ~~~~");
+		returnAverage();
 	}
 
 	/**
@@ -198,21 +219,8 @@ public class ExperimentDriver {
 	 * @param args command-line arguments; not used
 	 */
 	public static void main(String[] args) {
-		runExperiment(8);
-		System.out.println();
-		System.out.println();
-
-		System.out.println("~~~~Best Ten~~~~");
-		returnBestTen();
-		System.out.println();
-
-		System.out.println("~~~~Worst Ten~~~~");
-		returnWorstTen();
-		System.out.println();
-
-		System.out.println("~~~~Average ~~~~~");
-		returnAverage();
-		//runExperiment(6);
-		//runExperiment(8);
+		runAndPrintExperiment(4);
+		runAndPrintExperiment(6);
+		runAndPrintExperiment(8);
 	}
 }
