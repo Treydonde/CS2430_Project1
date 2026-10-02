@@ -1,11 +1,12 @@
 
-package project1_AlgorithmPerformance;
+package project1_AlgorithmPerformance.tests;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.junit.jupiter.api.Test;
+import project1_AlgorithmPerformance.ShakerSort;
 
 class ShakerSortTest {
 
