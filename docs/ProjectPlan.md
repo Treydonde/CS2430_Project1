@@ -18,7 +18,7 @@
 | Gustavo Cabral | Implementation Lead | Core implementation, integration, and main branch health |
 | Benjamin Shaw | Verification Lead | Test plan, edge cases, testing, and verification evidence |
 | Paulina Cruz | Communications Lead | Report assembly, run instructions, documentation, and deliverable packaging |
-| Camilla Feitosa Nunes | TBD | TBD |
+| Camilla Feitosa Nunes | Project Support | Provide support across implementation, testing, and documentation as needed. |
 
 ---
 
@@ -73,7 +73,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Create GitHub repository | Gustavo | Done | Repository |
 | Add all team members to repository | Team | Done | Repository |
 | Confirm instructor repository access | Gustavo | Done | Invite confirmed |
-| Assign team roles | Team | In Progress | `docs/ProjectPlan.md` |
+| Assign team roles | Team | Done | `docs/ProjectPlan.md` |
 | Create `/docs` folder | Gustavo | Done | `docs/` |
 | Create Project Plan | Paulina | In Progress | `docs/ProjectPlan.md` |
 | Create design artifacts | Gustavo / Paulina | In Progress | `docs/Sequence_PseudoCode.md`, `docs/UML.md` |
@@ -86,11 +86,10 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Implement `PermutationGenerator.java` | Gustavo | Done | `src/project1_AlgorithmPerformance/PermutationGenerator.java` |
-| Implement `ExperimentDriver.java` | TBD | Not Started | - |
-| Integrate permutation generator with sorting algorithms | TBD | Not Started | - |
-| Record algorithm name, input array, and comparison count | TBD | Not Started | - |
-| TBD | TBD | Not Started | - |
+| Implement `PermutationGenerator.java` | Gustavo | Done | [Commit 7af7d97](https://github.com/Treydonde/CS2430_Project1/commit/7af7d97ba53b429345baa05449c902fff64eebef) |
+| Implement `ExperimentDriver.java` | Gustavo | Not Started | - |
+| Integrate permutation generator with sorting algorithms | Gustavo | Not Started | - |
+| Record algorithm name, input array, and comparison count | Paulina | Not Started | - |
 
 ---
 
@@ -100,8 +99,8 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 |---|---|---|---|
 | Implement `MergeSort.java` | Paulina | Done | [Commit e8c6694](https://github.com/Treydonde/CS2430_Project1/commit/e8c669461130dad2c5918c2a55ea8312b8152a5b) |
 | Implement `QuickSort.java` | Paulina | Done | [Commit 6400ffa](https://github.com/Treydonde/CS2430_Project1/commit/6400ffa13d7ce08d1b1c17de855959ba5931bc49) |
-| Implement `ShakerSort.java` | Ben | In Progress | - |
-| Implement `HeapSort.java` | Ben | In Progress | - |
+| Implement `ShakerSort.java` | Ben | Done | [Commit b5cbab1](https://github.com/Treydonde/CS2430_Project1/commit/b5cbab1a4b7eaa470bf5a8d9e0df858442091a4f) |
+| Implement `HeapSort.java` | Ben | Done | [Commit b5cbab1](https://github.com/Treydonde/CS2430_Project1/commit/b5cbab1a4b7eaa470bf5a8d9e0df858442091a4f) |
 
 ---
 
@@ -110,11 +109,11 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Create test plan | Ben | Not Started | - |
-| Test permutation generator | Ben / Team? | Not Started | - |
-| Test Merge Sort | Ben / Team? | Not Started | - |
-| Test Quick Sort | Ben / Team? | Not Started | - |
-| Test Shaker Sort | Ben / Team? | Not Started | - |
-| Test Heap Sort | Ben / Team? | Not Started | - |
+| Test permutation generator | Gustavo | Not Started | - |
+| Test Merge Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
+| Test Quick Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
+| Test Shaker Sort | Camilla | In Progress |Tests written and passing; awaiting verification review|
+| Test Heap Sort | Ben  | Not Started | - |
 | TBD | TBD | Not Started | - |
 
 ---
@@ -123,16 +122,27 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| Write introduction | Team | Not Started | - |
-| Write algorithm summaries | Team | Not Started | - |
-| Write methods section | Team | Not Started | - |
-| Create results tables | Team | Not Started | - |
-| Complete Big-O / Big-Omega / Big-Theta analysis | Team | Not Started | - |
-| Write conclusion | Team | Not Started | - |
+| Write introduction | Paulina | Not Started | - |
+| Write algorithm summaries | Paulina/Camilla | Not Started | - |
+| Write methods section | Gustavo | Not Started | - |
+| Create results tables | Paulina | Not Started | - |
+| Write conclusion | Paulina | Not Started | - |
 | Assemble final report | Paulina | Not Started | - |
 | Complete `README.md` | Paulina | Not Started | - |
 | Complete `CONTRIBUTIONS.md` | Team | Not Started | - |
 | Record team screencast | Team | Not Started | - |
+| Edit team screencast | Gustavo | Not Started | - |
+| Estimate Big-O, Big-Ω, and Big-Θ for each algorithm using your data (show reasoning, not just lookup). | Ben | - |
+| Discuss sensitivity of best/worst cases — is performance stable or highly variable? Use your best/worst spread to justify. | Camilla | - |
+| Project number of comparisons for n = 12 using logical extrapolation from your measured values. | Ben | - |
+| Identify which algorithm performed best in best, average, and worst cases for n = 4, 6, 8, and discuss your predictions for larger n. | Gustavo | - |
+| Briefly discuss why your measured results may differ from “published” complexity discussions (constants, implementation choices, pivots, data structures, etc.). | Camilla | - |
+| Your project structure (including /docs, README, and key source files). | Paulina | - |
+| Your permutation generator and where it is used in the driver. | Gustavp | - |
+| Where and how comparisons are counted in at least one algorithm (explain the counting definition). | Camilla | - |
+| A live run for one n value and where the program outputs/stores the results used in the report. | Ben | - |
+| A brief summary of the report’s conclusions. | Ben | - |
+| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | - |
 | Review final submission package | Team | Not Started | - |
 
 ---
@@ -150,7 +160,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 **Status:** In Progress
 
-## Milestone 2 - Core Implementation - Target: TBD
+## Milestone 2 - Core Implementation - Target: 09-29-2026
 
 - PermutationGenerator completed
 - Merge Sort completed
@@ -161,7 +171,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 
 **Status:** In Progress
 
-## Milestone 3 - Testing and Data Collection - Target: TBD
+## Milestone 3 - Testing and Data Collection - Target: 09-30-2026
 
 - Test plan completed
 - Sorting algorithms verified
