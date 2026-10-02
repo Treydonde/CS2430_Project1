@@ -1,11 +1,39 @@
 # UML Class Diagram
 
-This is the initial UML design for the project. More details and class relationships will be added as the project develops.
+This diagram represents the class structure and relationships for Programming Project 1.
 
 ```mermaid
 classDiagram
 
-    class ExperimentDriver
+    class Main {
+        ~void main(String[] args)$
+    }
+    
+    class ExperimentDriver {
+        -List~ExperimentResult~ mergeResults$
+        -List~ExperimentResult~ quickResults$
+        -List~ExperimentResult~ shakerResults$
+        -List~ExperimentResult~ heapResults$
+
+        +void runExperiment(int n)$
+        +void returnBestTen()$
+        +void returnWorstTen()$
+        +void returnAverage()$
+        +void runAndPrintExperiment(int n)$
+    }
+
+    class ExperimentResult {
+        -String algorithm
+        -int[] inputArray
+        -int comparisons
+
+        +ExperimentResult(String algorithm, int[] inputArray, int comparisons)
+        +String getAlgorithm()
+        +int[] getInputArray()
+        +int getComparisons()
+        +String toString()
+        +int compareTo(ExperimentResult o)
+    }
 
     class PermutationGenerator {
         +int[] createBaseArray(int n)
@@ -16,6 +44,7 @@ classDiagram
 
     class MergeSort {
         -int comparisons
+
         +int sort(int[] array)
         -void mergeSort(int[] array, int left, int right)
         -void merge(int[] array, int left, int mid, int right)
@@ -23,21 +52,33 @@ classDiagram
 
     class QuickSort {
         -int comparisons
+
         +int sort(int[] array)
         -void quickSort(int[] array, int lowIndex, int highIndex)
         -int partition(int[] array, int lowIndex, int highIndex)
     }
 
     class ShakerSort {
-        ~void sort(int[] a)
+        -int comparisons
+
+        +int sort(int[] array)
     }
 
     class HeapSort {
-        +void sort(int[] arr)
-        ~void heapify(int[] arr, int n, int i)
+        -int[] arr
+        -int comparisonCount
+
+        +HeapSort(int[] arr)
+        +int getComparisonCount()
+        +int[] getArr()
+        -int[] sort(int[] arr)
+        -void heapify(int[] arr, int n, int index)
     }
 
+    Main --> ExperimentDriver : starts experiments
+
     ExperimentDriver --> PermutationGenerator : generates permutations
+    ExperimentDriver --> ExperimentResult : records results
     ExperimentDriver --> MergeSort : runs
     ExperimentDriver --> QuickSort : runs
     ExperimentDriver --> ShakerSort : runs
