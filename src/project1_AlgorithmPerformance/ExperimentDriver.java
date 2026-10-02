@@ -61,11 +61,9 @@ public class ExperimentDriver {
 			// Sort the copied array using MergeSort and record its comparison count
 			MergeSort mergeSort = new MergeSort();
 			int mergeComparisons = mergeSort.sort(mergeArray);
-			
-			// Store the MergeSort result
-			ExperimentResult mergeResult = new ExperimentResult("MergeSort", permutation, mergeComparisons);
 
-			mergeResults.add(mergeResult);
+			// Store the MergeSort result
+			mergeResults.add(new ExperimentResult("MergeSort", permutation, mergeComparisons));
 			
 			// ==================== QuickSort ====================
 			int[] quickArray = Arrays.copyOf(permutation, permutation.length);
@@ -74,15 +72,15 @@ public class ExperimentDriver {
 			int quickComparisons = quickSort.sort(quickArray);
 			
 			// Store the QuickSort result
-			ExperimentResult quickResult = new ExperimentResult("QuickSort", permutation, quickComparisons);
-
-			quickResults.add(quickResult);
+			quickResults.add(new ExperimentResult("QuickSort", permutation, quickComparisons));
 			
 			// ==================== ShakerSort ====================
 			int[] shakerArray = Arrays.copyOf(permutation, permutation.length);
 			
 			ShakerSort shakerSort = new ShakerSort();
-			// TODO: waiting on shakerSort implementation to be completed
+			int shakerComparisons = shakerSort.sort(shakerArray);
+
+			shakerResults.add(new ExperimentResult("ShakerSort", permutation, shakerComparisons));
 			
 			// ==================== HeapSort ====================
 			int[] heapArray = Arrays.copyOf(permutation, permutation.length);
@@ -91,9 +89,7 @@ public class ExperimentDriver {
 			int heapComparisons = heapSort.getComparisonCount();
 			
 			// Store the HeapSort result
-			ExperimentResult heapResult = new ExperimentResult("HeapSort", permutation, heapComparisons);
-
-			heapResults.add(heapResult);
+			heapResults.add(new ExperimentResult("HeapSort", permutation, heapComparisons));
 		}
 	}
 
@@ -115,6 +111,14 @@ public class ExperimentDriver {
 			System.out.println(quickResults.get(i).getAlgorithm() + " | Input: "
 					+ Arrays.toString(quickResults.get(i).getInputArray())
 					+  " | Comparisons: " + quickResults.get(i).getComparisons());
+		}
+		System.out.println();
+
+		shakerResults.sort(null);
+		for (int i = 0; i < 10; i++) {
+			System.out.println(shakerResults.get(i).getAlgorithm() + " | Input: "
+			+ Arrays.toString(shakerResults.get(i).getInputArray())
+			+  " | Comparisons: " + shakerResults.get(i).getComparisons());
 		}
 		System.out.println();
 
@@ -147,6 +151,14 @@ public class ExperimentDriver {
 		}
 		System.out.println();
 
+		shakerResults.sort(Comparator.reverseOrder());
+		for (int i = 0; i < 10; i++) {
+			System.out.println(shakerResults.get(i).getAlgorithm() + " | Input: "
+			+ Arrays.toString(shakerResults.get(i).getInputArray())
+			+ " | Comparisons: " + shakerResults.get(i).getComparisons());
+		}
+		System.out.println();
+
 		heapResults.sort(Comparator.reverseOrder());
 		for (int i = 0; i < 10; i++) {
 			System.out.println(heapResults.get(i).getAlgorithm() + " | Input: "
@@ -172,11 +184,11 @@ public class ExperimentDriver {
 		}
 		quickAvg /= quickResults.size();
 
-//		double shakerAvg = 0.0;
-//		for (ExperimentResult r : shakerResults) {
-//			shakerAvg += r.getComparisons();
-//		}
-//		shakerAvg /= shakerResults.size();
+		double shakerAvg = 0.0;
+		for (ExperimentResult r : shakerResults) {
+			shakerAvg += r.getComparisons();
+		}
+		shakerAvg /= shakerResults.size();
 
 		double heapAvg = 0.0;
 		for (ExperimentResult r : heapResults) {
@@ -186,7 +198,7 @@ public class ExperimentDriver {
 
 		System.out.printf("Merge Avg: %.2f%n", mergeAvg);
 		System.out.printf("Quick Avg: %.2f%n", quickAvg);
-		//System.out.printf("Shaker Avg: %.2f%n", shakerAvg);
+		System.out.printf("Shaker Avg: %.2f%n", shakerAvg);
 		System.out.printf("Heap Avg: %.2f%n", heapAvg);
 	}
 	
@@ -197,7 +209,7 @@ public class ExperimentDriver {
 	 * 
 	 * @param n	the number of elements in each generated permutation
 	 */
-	private static void runAndPrintExperiment(int n) {
+	public static void runAndPrintExperiment(int n) {
 		runExperiment(n);
 		
 		System.out.println();
@@ -211,16 +223,5 @@ public class ExperimentDriver {
 		
 		System.out.println("\n~~~~ Average ~~~~");
 		returnAverage();
-	}
-
-	/**
-	 * Runs the experiment for each required input size.
-	 *
-	 * @param args command-line arguments; not used
-	 */
-	public static void main(String[] args) {
-		runAndPrintExperiment(4);
-		runAndPrintExperiment(6);
-		runAndPrintExperiment(8);
 	}
 }
