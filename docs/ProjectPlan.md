@@ -87,9 +87,9 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Implement `PermutationGenerator.java` | Gustavo | Done | [Commit 7af7d97](https://github.com/Treydonde/CS2430_Project1/commit/7af7d97ba53b429345baa05449c902fff64eebef) |
-| Implement `ExperimentDriver.java` | Gustavo | Not Started | - |
-| Integrate permutation generator with sorting algorithms | Gustavo | Not Started | - |
-| Record algorithm name, input array, and comparison count | Paulina | Not Started | - |
+| Implement `ExperimentDriver.java` | Gustavo/Paulina | In Progress | - |
+| Integrate permutation generator with sorting algorithms | Gustavo/Paulina | In Progress | - |
+| Record algorithm name, input array, and comparison count | Paulina/Gustavo | In Progress | - |
 
 ---
 
@@ -109,7 +109,7 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Create test plan | Ben | Not Started | - |
-| Test permutation generator | Gustavo | Not Started | - |
+| Test permutation generator | Gustavo | Done | [Commit ef6b1c6](https://github.com/Treydonde/CS2430_Project1/commit/ef6b1c6e24c52d22c781c07a0c9444b8bd61d9df) |
 | Test Merge Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
 | Test Quick Sort | Paulina | In Progress | Tests written and passing; awaiting verification review |
 | Test Shaker Sort | Camilla | In Progress |Tests written and passing; awaiting verification review|
