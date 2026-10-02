@@ -5,13 +5,15 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Team TBD
- * GustavoC, BenS, PaulinaC, CamillaF
- * CS 2430 section 002
- * Programming Project 1 - Fall 2026
+ * Creates an array of 0 - n-1 and all lexicographic permutations
+ * for provided small n
  *
- * Creates a permutation generator
- * for provided small int create a base array of 0 - n-1
+ * returns an array of int arrays
+ *
+ * Team Name: Group 2
+ * Team Members: Benjamin Shaw, Camilla Feitosa Nunes, Gustavo Cabral, Paulina Cruz
+ * Course: CS 2430, Section 002
+ * Project: Programming Project 1 - Fall 2026
  *
  * @author Gustavo C
  */
