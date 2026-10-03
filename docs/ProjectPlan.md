@@ -89,8 +89,8 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 |---|---|---|---|
 | Implement `PermutationGenerator.java` | Gustavo | Done | [Commit 7af7d97](https://github.com/Treydonde/CS2430_Project1/commit/7af7d97ba53b429345baa05449c902fff64eebef) |
 | Implement `ExperimentDriver.java` | Gustavo/Paulina | Done | [Commit da0648f](https://github.com/Treydonde/CS2430_Project1/commit/da0648fa515209e4204a5c45ceaff5eb76426b3b) |
-| Integrate permutation generator with sorting algorithms | Gustavo/Paulina | Done | `ExperimentDriver.java` |
-| Record algorithm name, input array, and comparison count | Paulina/Gustavo | Done | `ExperimentResult.java`, `ExperimentDriver.java` |
+| Integrate permutation generator with sorting algorithms | Gustavo/Paulina | Done | [Commit e5c4801](https://github.com/Treydonde/CS2430_Project1/commit/e5c480162ea86c6f691f143668a8af274642c9bc) [Commit da0648f](https://github.com/Treydonde/CS2430_Project1/commit/da0648fa515209e4204a5c45ceaff5eb76426b3b) |
+| Record algorithm name, input array, and comparison count | Paulina/Gustavo | Done | [Commit ececee9](https://github.com/Treydonde/CS2430_Project1/commit/ececee92f9439f0109cc2cbe632b781717429cc3) [Commit 7282a7b](https://github.com/Treydonde/CS2430_Project1/commit/7282a7b50f277448125461641212a1351cb3c471) |
 
 ---
 
