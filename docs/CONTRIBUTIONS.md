@@ -17,10 +17,9 @@ evidence pointers such as files, commits, pull requests, or repository history.
 
 | Work Completed | Evidence |
 |---|---|
-| Implemented HeapSort | TBD |
-| Tested HeapSort | TBD |
+| Implemented HeapSort | [b5cbab1](https://github.com/Treydonde/CS2430_Project1/commit/b5cbab1a4b7eaa470bf5a8d9e0df858442091a4f) |
+| Tested HeapSort | [294c005](https://github.com/Treydonde/CS2430_Project1/commit/294c00500803718ba7bb1daa5767c00d8b446f1d) |
 | Worked on evaluating output | TBD |
-|  |  |
 
 ## Camilla Feitosa Nunes
 
@@ -34,8 +33,20 @@ evidence pointers such as files, commits, pull requests, or repository history.
 
 | Work Completed | Evidence |
 |---|---|
-| TBD | TBD |
-| TBD | TBD |
+| Permutation Generator | [7af7d97](https://github.com/Treydonde/CS2430_Project1/commit/7af7d97ba53b429345baa05449c902fff64eebef) |
+| Permutation Generator Tests | [ed9bc39](https://github.com/Treydonde/CS2430_Project1/commit/ed9bc399e90bbbfb728dffb192d0062fcacf9053) |
+| Experiment Driver Shaker Sort Implementation | [e5c4801](https://github.com/Treydonde/CS2430_Project1/commit/e5c480162ea86c6f691f143668a8af274642c9bc) |
+| Experiment Driver Best/Worst/Average Methods | [7282a7b](https://github.com/Treydonde/CS2430_Project1/commit/7282a7b50f277448125461641212a1351cb3c471) |
+| Created Repo and set up project | https://github.com/Treydonde/CS2430_Project1 |
+| Reviewed and merged Quick sort implementation to main | [2e0644f](https://github.com/Treydonde/CS2430_Project1/commit/2e0644f051b0316b164faa1c13fa4b16d488efde) |
+| Reviewed and merged Merge sort implementation to main | [2a6d6f3](https://github.com/Treydonde/CS2430_Project1/commit/2a6d6f3aa1e8ef75b28000c58dd817a5bb9c3298) |
+| Reviewed and merged Heap sort implementation to main | [51fdeb2](https://github.com/Treydonde/CS2430_Project1/commit/51fdeb219643b336d96b816ba6784afe1ec27b8e) |
+| Reviewed and merged Shaker sort implementation to main | [7aa8f71](https://github.com/Treydonde/CS2430_Project1/commit/7aa8f71092ca2eca5bb0a536974f4f5afbcc39a7) |
+| Reviewed and merged Experiment Driver implementation to main | [ab0675f](https://github.com/Treydonde/CS2430_Project1/commit/ab0675f260a25677fbc4ff3a628f850aaa7e0e2d) |
+| Wrote Methods section of report | - |
+| Wrote Part 8 Question 4 of report | - |
+| Wrote Summary of works done/lessons learned of report | - |
+| Edited together video presentation | - |
 
 ## Paulina Cruz
 
