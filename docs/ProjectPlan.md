@@ -124,26 +124,26 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 |---|---|---|---|
 | Write introduction | Paulina | Done |  |
 | Write algorithm summaries | Paulina/Camilla | Done |  |
-| Write methods section | Gustavo | Not Started |  |
+| Write methods section | Gustavo | Done |  |
 | Create results tables | Paulina | Done |  |
-| Write conclusion | Paulina | In Progress |  |
-| Assemble final report | Paulina | In Progress |  |
+| Write conclusion | Paulina | Done |  |
+| Assemble final report | Paulina | Done |  |
 | Complete `README.md` | Paulina | Done | [Commit 8343cfb](https://github.com/Treydonde/CS2430_Project1/commit/8343cfbaf2e8a4c1ff06e5e66bb0093e497e4e55) |
-| Complete `CONTRIBUTIONS.md` | Team | In Progress |  |
-| Record team screencast | Team | In Progress |  |
-| Edit team screencast | Gustavo | In Progress |  |
+| Complete `CONTRIBUTIONS.md` | Team | Done |  |
+| Record team screencast | Team | Done |  |
+| Edit team screencast | Gustavo | Done |  |
 | Estimate Big-O, Big-Ω, and Big-Θ for each algorithm using your data (show reasoning, not just lookup). | Ben | Done |
 | Discuss sensitivity of best/worst cases — is performance stable or highly variable? Use your best/worst spread to justify. | Camilla | Done |
 | Project number of comparisons for n = 12 using logical extrapolation from your measured values. | Ben | Done |
-| Identify which algorithm performed best in best, average, and worst cases for n = 4, 6, 8, and discuss your predictions for larger n. | Gustavo | In Progress |
+| Identify which algorithm performed best in best, average, and worst cases for n = 4, 6, 8, and discuss your predictions for larger n. | Gustavo | Done |
 | Briefly discuss why your measured results may differ from “published” complexity discussions (constants, implementation choices, pivots, data structures, etc.). | Camilla | Done |
-| Your project structure (including /docs, README, and key source files). | Paulina | In Progress |
-| Your permutation generator and where it is used in the driver. | Gustavo | In Progress |
+| Your project structure (including /docs, README, and key source files). | Paulina | Done |
+| Your permutation generator and where it is used in the driver. | Gustavo | Done |
 | Where and how comparisons are counted in at least one algorithm (explain the counting definition). | Camilla | Done |
 | A live run for one n value and where the program outputs/stores the results used in the report. | Ben | Done |
 | A brief summary of the report’s conclusions. | Ben | Done |
-| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | In Progress |
-| Review final submission package | Team | In Progress |  |
+| Each team member must participate (voice or captions) and explain their contribution (what they owned and how to find it in the zip/repo). | Team | Done |
+| Review final submission package | Team | Done |  |
 
 ---
 
@@ -189,4 +189,4 @@ Only element-to-element comparisons that determine ordering will be counted. Loo
 - Screencast recorded
 - Final submission package reviewed
 
-**Status:** In Progress
+**Status:** Done
