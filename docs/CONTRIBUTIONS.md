@@ -17,8 +17,10 @@ evidence pointers such as files, commits, pull requests, or repository history.
 
 | Work Completed | Evidence |
 |---|---|
-| TBD | TBD |
-| TBD | TBD |
+| Implemented HeapSort | TBD |
+| Tested HeapSort | TBD |
+| Worked on evaluating output | TBD |
+|  |  |
 
 ## Camilla Feitosa Nunes
 
