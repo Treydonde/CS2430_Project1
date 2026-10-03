@@ -11,7 +11,7 @@ evidence pointers such as files, commits, pull requests, or repository history.
 | Gustavo Cabral | Implementation Lead |
 | Benjamin Shaw | Verification Lead |
 | Paulina Cruz | Communications Lead |
-| Camilla Feitosa Nunes | TBD |
+| Camilla Feitosa Nunes | Project Support |
 
 ## Benjamin Shaw
 
@@ -24,8 +24,9 @@ evidence pointers such as files, commits, pull requests, or repository history.
 
 | Work Completed | Evidence |
 |---|---|
-| TBD | TBD |
-| TBD | TBD |
+| Implemented ShakerSort.java | [`f1ccdb9`](https://github.com/Treydonde/CS2430_Project1/commit/f1ccdb963a0c60285fb11b05fe6b5488183d6b51)|
+| Implemented Test Shaker Sort | [`f1ccdb9`](https://github.com/Treydonde/CS2430_Project1/commit/f1ccdb963a0c60285fb11b05fe6b5488183d6b51) |
+| Worked on the report | https://github.com/Treydonde/CS2430_Project1/blob/main/docs/ProjectPlan.md |
 
 ## Gustavo Cabral
 
